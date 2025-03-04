@@ -1,22 +1,23 @@
 package lightsensor;
 
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
 
 public class Activator implements BundleActivator {
+    private ServiceRegistration<?> registration;
 
-	private static BundleContext context;
+    @Override
+    public void start(BundleContext context) {
+        LightSensor sensor = new LightSensor();
+        registration = context.registerService(LightService.class.getName(), sensor, null);
+        System.out.println("🚀 Light Sensor Bundle Started.");
+    }
 
-	static BundleContext getContext() {
-		return context;
-	}
-
-	public void start(BundleContext bundleContext) throws Exception {
-		Activator.context = bundleContext;
-	}
-
-	public void stop(BundleContext bundleContext) throws Exception {
-		Activator.context = null;
-	}
-
+    @Override
+    public void stop(BundleContext context) {
+        registration.unregister();
+        System.out.println("🛑 Light Sensor Bundle Stopped.");
+    }
 }

@@ -1,0 +1,52 @@
+
+# IDE-Specific Files
+/.idea/
+/*.iml
+/*.ipr
+/*.iws
+/.classpath
+/.project
+/.settings/
+/.factorypath
+
+# Log Files
+/*.log
+/logs/
+
+# Dependency Directories
+/.gradle/
+/.mvn/
+/mvnw
+/mvnw.cmd
+/.m2/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Compiled Class Files
+*.class
+
+# Local Configuration Files
+*.properties
+*.yml
+*.yaml
+
+# Temporary Files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Test Output
+/test-output/
+/test-results/
+
+# OSGi Bundle Cache
+/.cache/
+/bundle_cache/
+
+# Eclipse Workspace Files
+/.recommenders/
+/.recommenders/
+/.recommenders/

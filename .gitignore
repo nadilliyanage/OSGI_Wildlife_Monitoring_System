@@ -1,3 +1,17 @@
+# OSGi Runtime Files
+/.metadata/
+/configuration/
+/plugins/
+/workspace/
+
+# Build Artifacts
+/target/
+/bin/
+/build/
+/dist/
+/*.jar
+/*.war
+/*.ear
 
 # IDE-Specific Files
 /.idea/

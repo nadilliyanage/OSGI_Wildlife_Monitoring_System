@@ -1,4 +1,5 @@
 # OSGi Runtime Files
+/*.metadata
 /.metadata/
 /configuration/
 /plugins/

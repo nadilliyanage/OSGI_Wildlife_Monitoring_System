@@ -1,0 +1,5 @@
+package temperaturesensorbundle;
+
+public interface TemperatureSensor {
+
+}

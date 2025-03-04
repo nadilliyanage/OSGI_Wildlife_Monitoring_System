@@ -1,0 +1,5 @@
+package climatecontrolsystem;
+
+public interface ClimateControlService {
+
+}

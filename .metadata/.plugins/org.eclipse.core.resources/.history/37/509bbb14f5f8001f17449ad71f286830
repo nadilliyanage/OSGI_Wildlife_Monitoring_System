@@ -1,0 +1,6 @@
+package temperaturesensorbundle;
+
+
+public interface TemperatureService {
+    int getTemperature();
+}

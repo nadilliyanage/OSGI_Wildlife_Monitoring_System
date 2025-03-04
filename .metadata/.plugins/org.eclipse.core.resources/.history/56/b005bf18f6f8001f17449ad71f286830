@@ -1,0 +1,5 @@
+package humiditysensor;
+
+public interface HumidityService {
+
+}

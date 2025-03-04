@@ -1,0 +1,5 @@
+package camerasensor;
+
+public interface CameraService {
+
+}

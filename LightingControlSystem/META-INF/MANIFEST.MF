@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LightingControlSystem
+Bundle-SymbolicName: lighting.control
+Bundle-Version: 1.0.0
+Bundle-Activator: lightingcontrolsystem.Activator
+Export-Package: lightingcontrolsystem
+Import-Package: org.osgi.framework, lightsensor, animalmotionsensor

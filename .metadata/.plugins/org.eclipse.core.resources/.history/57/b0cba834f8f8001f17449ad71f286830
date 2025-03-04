@@ -1,0 +1,5 @@
+package lightingcontrolsystem;
+
+public interface LightingControlService {
+
+}

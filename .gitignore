@@ -63,3 +63,7 @@ Thumbs.db
 
 # Eclipse Workspace Files
 /.recommenders/
+
+/.ini/
+/.dev.properties/
+/.fileTable.2/

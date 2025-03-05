@@ -1,6 +1,5 @@
 package camerasensor;
 
-
 import java.util.Random;
 
 public class CameraSensor implements CameraService {

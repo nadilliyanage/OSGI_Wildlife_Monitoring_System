@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Temperature Sensor
-Bundle-SymbolicName: temperature.sensor
-Bundle-Version: 1.0.0
-Bundle-Activator: temperature.Activator
-Export-Package: temperaturesensor
-Import-Package: org.osgi.framework

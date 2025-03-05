@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;motionsensor&apos; to &apos;motion&apos;&#x0D;&#x0A;- Original project: &apos;MotionSensor&apos;&#x0D;&#x0A;- Original element: &apos;MotionSensor/src/motionsensor&apos;&#x0D;&#x0A;- Renamed element: &apos;MotionSensor/src/motion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;motionsensor&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;motionsensor" name="motion" qualified="false" references="true" stamp="1741071351183" textual="false" version="1.0"/>
-</session>

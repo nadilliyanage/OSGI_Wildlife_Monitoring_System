@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: WaterManagementSystem
+Bundle-SymbolicName: water.management
+Bundle-Version: 1.0.0
+Bundle-Activator: watermanagementsystem.Activator
+Export-Package: watermanagementsystem
+Import-Package: org.osgi.framework, waterqualitysensor

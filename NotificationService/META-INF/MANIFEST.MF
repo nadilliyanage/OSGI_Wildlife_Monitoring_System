@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NotificationService
+Bundle-SymbolicName: notification.service
+Bundle-Version: 1.0.0
+Bundle-Activator: notificationservice.Activator
+Export-Package: notificationservice
+Import-Package: org.osgi.framework

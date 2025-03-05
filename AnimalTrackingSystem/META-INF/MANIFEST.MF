@@ -5,4 +5,4 @@ Bundle-SymbolicName: tracking.system
 Bundle-Version: 1.0.0
 Bundle-Activator: animaltrackingsystem.Activator
 Export-Package: animaltrackingsystem
-Import-Package: org.osgi.framework, animalmotionsensor, camerasensor
+Import-Package: org.osgi.framework, animalmotionsensor, camerasensor ,notificationservice

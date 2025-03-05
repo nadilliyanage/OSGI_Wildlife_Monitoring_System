@@ -1,7 +1,9 @@
 # OSGi Runtime Files
+
 /*.metadata
 /.metadata/*
 .metadata/
+/.metadata/
 /configuration/
 /plugins/
 /workspace/
@@ -64,7 +66,5 @@ Thumbs.db
 
 # Eclipse Workspace Files
 /.recommenders/
-
-/.ini/
-/.dev.properties/
-/.fileTable.2/
+/.recommenders/
+/.recommenders/

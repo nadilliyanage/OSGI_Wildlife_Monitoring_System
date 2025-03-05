@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HabitatHealthSystem
+Bundle-SymbolicName: habitat.health
+Bundle-Version: 1.0.0
+Bundle-Activator: habitathealthsystem.Activator
+Export-Package: habitathealthsystem
+Import-Package: org.osgi.framework, temperaturesensor, humiditysensor, airqualitysensor, waterqualitysensor, noisesensor

@@ -7,7 +7,7 @@ import org.osgi.framework.ServiceReference;
 import org.osgi.framework.ServiceRegistration;
 import animalmotionsensor.AnimalMotionService;
 import camerasensor.CameraService;
-import lightsensor.LightService;
+import noisesensor.NoiseService;
 
 public class Activator implements BundleActivator {
     private ServiceRegistration<?> registration;
@@ -19,13 +19,13 @@ public class Activator implements BundleActivator {
 
         ServiceReference<?> motionRef = context.getServiceReference(AnimalMotionService.class.getName());
         ServiceReference<?> cameraRef = context.getServiceReference(CameraService.class.getName());
-        ServiceReference<?> lightRef = context.getServiceReference(LightService.class.getName());
+        ServiceReference<?> noiseRef = context.getServiceReference(NoiseService.class.getName());
 
-        if (motionRef != null && cameraRef != null && lightRef != null) {
+        if (motionRef != null && cameraRef != null && noiseRef != null) {
             AnimalMotionService motionService = (AnimalMotionService) context.getService(motionRef);
             CameraService cameraService = (CameraService) context.getService(cameraRef);
-            LightService lightService = (LightService) context.getService(lightRef);
-            securitySystem.monitorArea(motionService.detectAnimalMotion(), cameraService.captureImage(), lightService.getLightIntensity());
+            NoiseService noiseService = (NoiseService) context.getService(noiseRef);
+            securitySystem.monitorArea(motionService.detectAnimalMotion(), cameraService.captureImage(), noiseService.getNoiseLevel());
         }
 
         System.out.println("🚀 Security System Bundle Started.");

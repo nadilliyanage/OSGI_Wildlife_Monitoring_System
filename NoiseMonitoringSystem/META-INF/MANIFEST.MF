@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: NoiseMonitoringSystem
+Bundle-SymbolicName: noise.monitoring
+Bundle-Version: 1.0.0
+Bundle-Activator: noisemonitoringsystem.Activator
+Export-Package: noisemonitoringsystem
+Import-Package: org.osgi.framework, noisesensor

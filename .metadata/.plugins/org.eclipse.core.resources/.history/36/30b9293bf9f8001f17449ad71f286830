@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Security System
-Bundle-SymbolicName: security.system
-Bundle-Version: 1.0.0
-Bundle-Activator: security.Activator
-Export-Package: securitysystem
-Import-Package: org.osgi.framework, animal, camera, light

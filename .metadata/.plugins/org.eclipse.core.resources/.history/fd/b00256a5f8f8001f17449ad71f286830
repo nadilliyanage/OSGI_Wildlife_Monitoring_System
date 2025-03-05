@@ -1,5 +1,0 @@
-package animaltrackingsystem;
-
-public interface AnimalTrackingService {
-
-}

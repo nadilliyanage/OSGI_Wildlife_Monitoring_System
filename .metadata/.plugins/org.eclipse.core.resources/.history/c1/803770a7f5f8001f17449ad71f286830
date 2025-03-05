@@ -1,5 +1,0 @@
-package lightsensor;
-
-public interface LightService {
-
-}

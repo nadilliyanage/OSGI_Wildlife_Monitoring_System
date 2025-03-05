@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Animal Tracking System
-Bundle-SymbolicName: tracking.system
-Bundle-Version: 1.0.0
-Bundle-Activator: tracking.Activator
-Export-Package: tracking
-Import-Package: org.osgi.framework, animal, camera

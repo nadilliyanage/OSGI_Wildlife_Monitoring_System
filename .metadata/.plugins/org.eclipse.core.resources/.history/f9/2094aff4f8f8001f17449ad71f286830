@@ -1,5 +1,0 @@
-package securitysystem;
-
-public interface SecurityService {
-
-}

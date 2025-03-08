@@ -9,9 +9,9 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
+    	System.out.println("🚀 Air Quality Sensor Bundle Started.");
         AirQualitySensor sensor = new AirQualitySensor();
         registration = context.registerService(AirQualityService.class.getName(), sensor, null);
-        System.out.println("🚀 Air Quality Sensor Bundle Started.");
     }
 
     @Override

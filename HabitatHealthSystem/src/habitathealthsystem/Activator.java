@@ -15,7 +15,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
-    	  System.out.println("\n🚀 Habitat Health System Bundle Started.");
+    	System.out.println("🚀 Habitat Health System Bundle Started.");
 
         HabitatHealthSystem healthSystem = new HabitatHealthSystem();
         registration = context.registerService(HabitatHealthService.class.getName(), healthSystem, null);

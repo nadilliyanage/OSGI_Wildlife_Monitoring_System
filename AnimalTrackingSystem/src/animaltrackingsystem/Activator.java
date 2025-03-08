@@ -65,25 +65,28 @@ public class Activator implements BundleActivator {
             int detectionCount = 0;
             while (running) {
                 boolean motionDetected = motionService.detectAnimalMotion();
-                boolean imageCaptured = cameraService.captureImage();
 
-                if (motionDetected && imageCaptured) {
-                    detectionCount++;
-                    trackingSystem.trackAnimals(motionDetected, imageCaptured, detectionCount);
-                    notificationService.sendNotification("Animal Detected and Image Captured! (Detection #" + detectionCount + ")");
-                    
+                if (motionDetected) {
+                    boolean imageCaptured = cameraService.captureImage();
+
+                    if (imageCaptured) {
+                        detectionCount++;
+                        trackingSystem.trackAnimals(motionDetected, imageCaptured, detectionCount);
+                        notificationService.sendNotification("Animal Detected and Image Captured! (Detection #" + detectionCount + ")\n");
+                    } else {
+                        System.out.println("📷 Motion Detected, but Image Capture Failed.\n");
+                    }
                 } else {
-                    System.out.println("📝 No Animal Activity Detected.");
+                    System.out.println("📝 No Animal Activity Detected.\n");
                 }
 
                 try {
-                    // Check every 1 second
+                    // Check every 5 seconds
                     Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     // Gracefully exit if interrupted
                     Thread.currentThread().interrupt();
                 }
-  
             }
         }
     }

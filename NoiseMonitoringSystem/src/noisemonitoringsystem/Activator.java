@@ -12,6 +12,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
+    	System.out.println("🚀 Noise Monitoring System Bundle Started.");
         NoiseMonitoringSystem noiseSystem = new NoiseMonitoringSystem();
         registration = context.registerService(NoiseMonitoringService.class.getName(), noiseSystem, null);
 
@@ -20,8 +21,6 @@ public class Activator implements BundleActivator {
             NoiseService noiseService = (NoiseService) context.getService(ref);
             noiseSystem.monitorNoise(noiseService.getNoiseLevel());
         }
-
-        System.out.println("🚀 Noise Monitoring System Bundle Started.");
     }
 
     @Override

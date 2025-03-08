@@ -11,6 +11,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
+    	System.out.println("🚀 Water Management System Bundle Started.");
         WaterManagementSystem waterSystem = new WaterManagementSystem();
         System.out.println("🚀 Water Management System Bundle Started.");
         registration = context.registerService(WaterManagementService.class.getName(), waterSystem, null);
@@ -21,7 +22,6 @@ public class Activator implements BundleActivator {
             waterSystem.manageWater(waterQualityService.getPHLevel(), waterQualityService.getTurbidity());
         }
 
-      
     }
 
     @Override

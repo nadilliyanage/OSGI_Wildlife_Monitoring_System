@@ -14,6 +14,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
+    	System.out.println("🚀 Security System Bundle Started.");
         SecuritySystem securitySystem = new SecuritySystem();
         registration = context.registerService(SecurityService.class.getName(), securitySystem, null);
 
@@ -27,8 +28,6 @@ public class Activator implements BundleActivator {
             NoiseService noiseService = (NoiseService) context.getService(noiseRef);
             securitySystem.monitorArea(motionService.detectAnimalMotion(), cameraService.captureImage(), noiseService.getNoiseLevel());
         }
-
-        System.out.println("🚀 Security System Bundle Started.");
     }
 
     @Override

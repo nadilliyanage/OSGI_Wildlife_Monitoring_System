@@ -13,6 +13,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
+    	System.out.println("🚀 Climate Control System Bundle Started.");
         ClimateControlSystem climateControl = new ClimateControlSystem();
         registration = context.registerService(ClimateControlService.class.getName(), climateControl, null);
 
@@ -24,8 +25,6 @@ public class Activator implements BundleActivator {
             HumidityService humidityService = (HumidityService) context.getService(humidityRef);
             climateControl.adjustClimate(tempService.getTemperature(), humidityService.getHumidity());
         }
-
-        System.out.println("🚀 Climate Control System Bundle Started.");
     }
 
     @Override

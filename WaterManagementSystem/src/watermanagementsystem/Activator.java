@@ -13,6 +13,7 @@ public class Activator implements BundleActivator {
     public void start(BundleContext context) {
     	System.out.println("🚀 Water Management System Bundle Started.");
         WaterManagementSystem waterSystem = new WaterManagementSystem();
+        System.out.println("🚀 Water Management System Bundle Started.");
         registration = context.registerService(WaterManagementService.class.getName(), waterSystem, null);
 
         ServiceReference<?> ref = context.getServiceReference(WaterQualityService.class.getName());
@@ -20,6 +21,7 @@ public class Activator implements BundleActivator {
             WaterQualityService waterQualityService = (WaterQualityService) context.getService(ref);
             waterSystem.manageWater(waterQualityService.getPHLevel(), waterQualityService.getTurbidity());
         }
+
     }
 
     @Override

@@ -13,6 +13,7 @@ public class Activator implements BundleActivator {
     @Override
     public void start(BundleContext context) {
         LightingControlSystem lightingControl = new LightingControlSystem();
+        System.out.println("🚀 Lighting Control System Bundle Started.");
         registration = context.registerService(LightingControlService.class.getName(), lightingControl, null);
 
         ServiceReference<?> lightRef = context.getServiceReference(LightService.class.getName());
@@ -24,7 +25,7 @@ public class Activator implements BundleActivator {
             lightingControl.adjustLighting(lightService.getLightIntensity(), motionService.detectAnimalMotion());
         }
 
-        System.out.println("🚀 Lighting Control System Bundle Started.");
+        
     }
 
     @Override

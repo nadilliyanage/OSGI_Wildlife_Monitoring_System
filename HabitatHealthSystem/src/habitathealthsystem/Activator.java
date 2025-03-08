@@ -70,9 +70,9 @@ public class Activator implements BundleActivator {
         		+ "`--' `--' `----'   `--'   `---' `--`--`--' `--`--'  `--'  `--' `---' `--''--' `--' '--' `----'|  |-' `---' `--'     `--'\r\n"
         		+ "-----------------------------------------------------------------------------------------------------------------------------"+
             
-            "\n\t\t\t\t\t|Automation Habitat Health System|                                           \n" +
-            "\t\t\t\t\t|\tVersion 1.0.0\t\t |                                                             \n"+
-    		"\t\t\t\t\t----------------------------------";
+            "\n\t\t\t\t\tAutomation Habitat Health System                                           \n" +
+            "\t\t\t\t\t\tVersion 1.0.0\t\t                                                              \n"
+    		;
 
         System.out.println(banner);
     }

@@ -5,4 +5,4 @@ Bundle-SymbolicName: habitat.health
 Bundle-Version: 1.0.0
 Bundle-Activator: habitathealthsystem.Activator
 Export-Package: habitathealthsystem
-Import-Package: org.osgi.framework, temperaturesensor, humiditysensor, airqualitysensor, waterqualitysensor, noisesensor
+Import-Package: org.osgi.framework, airqualitycontrolsystem, climatecontrolsystem, watermanagementsystem, noisemonitoringsystem

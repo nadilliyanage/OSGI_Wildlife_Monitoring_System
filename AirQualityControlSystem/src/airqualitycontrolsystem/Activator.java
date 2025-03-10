@@ -12,6 +12,7 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) {
+    	System.out.println("🚀 Air Quality Control System Bundle Started.");
         AirQualityControlSystem controlSystem = new AirQualityControlSystem();
         registration = context.registerService(AirQualityControlService.class.getName(), controlSystem, null);
 
@@ -20,8 +21,6 @@ public class Activator implements BundleActivator {
             AirQualityService airQualityService = (AirQualityService) context.getService(ref);
             controlSystem.adjustVentilation(airQualityService.getAirQuality());
         }
-
-        System.out.println("🚀 Air Quality Control System Bundle Started.");
     }
 
     @Override
